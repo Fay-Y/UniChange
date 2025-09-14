@@ -1,0 +1,2 @@
+Generated: A house is built in the woods along a road.
+GroundTruth: a house has been built among the original trees .

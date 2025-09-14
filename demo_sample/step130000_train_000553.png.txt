@@ -1,0 +1,2 @@
+Generated: Two buildings appear in the top left corner of the scene.
+GroundTruth: some villas have been built in the corner of this area .

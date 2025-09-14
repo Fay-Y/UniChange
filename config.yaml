@@ -1,0 +1,9 @@
+resume: False
+checkpoint_folder: checkpoints
+checkpoint_path: checkpoints/latest.pth
+tensorboard_path: logs/latest
+batch_size: 64
+lr: 1e-4
+weight_decay: 1e-2
+dataset_path: datasets
+
