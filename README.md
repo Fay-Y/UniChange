@@ -75,7 +75,7 @@ cd out_joint_step_50
 In the paper, the predicted captions are saved in folder "result". 
 ## Prediction samples
 Change captioning prediction results in test set with 5 Ground Truth captions are partly shown below, proving that our model can generate more semantically rich caption. 
-<img width="1498" height="2421" alt="experiment_cc" src="https://github.com/user-attachments/assets/afccb7ab-24f6-45fb-97a1-bda1dabf2296" alt="change captioning comparison" width="500"/>
+<img  alt="experiment_cc" src="https://github.com/user-attachments/assets/afccb7ab-24f6-45fb-97a1-bda1dabf2296" alt="change captioning comparison" width="500"/>
 
 Change detection prediction results in test set the Ground Truth label, demonstrating the effectiveness of UniChange. 
 <img width="1535" height="363" alt="experiment_cd" src="https://github.com/user-attachments/assets/5075ecb4-df20-4194-bc38-598cdea9a3bc" />
