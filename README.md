@@ -13,10 +13,11 @@ The proposed UniChange consists of:
 ![flowchart](https://github.com/user-attachments/assets/9d77e58b-f1f6-4783-a391-15adf221b173)
 
 ### Datasets
-#### LEVIR-CC
+#### LEVIR-MCI
 - A large-scale RSICC dataset with 10,077 bi-temporal image pairs and 50,385 captions.
 - Covers multiple semantic change types: buildings, roads, vegetation, parking lots, water.
 - Resized images: 256×256.
+- change map: buildings (white), roads (grey)
 
 Download Source:
 -Thanks for the Dataset by Liu et. al:[[GitHub](https://github.com/Chen-Yang-Liu/LEVIR-CC-Dataset)].
@@ -35,42 +36,38 @@ path to ./data:
                   │  ├─A
                   │  ├─B
 ```
-#### DUBAI-CC
-- Contains 500 urban area image pairs with 2500 annotations for changes in roads, buildings, lakes, etc.
-- Resized into 256×256 in Diffusion-RSCC.
-- Focuses on urbanization and land cover changes over 10 years.
 
 
 ## Installation and Dependencies
 ```python
-git clone https://github.com/Fay-Y/Diffusion-RSCC
-cd Diffusion-RSCC
-conda create -n DiffusionRSCC_env python=3.8
-conda activate DiffusionRSCC_env
+git clone https://github.com/Fay-Y/UniChange
+cd UniChange
+conda create -n unichange python=3.8
+conda activate unichange
 pip install -r requirements.txt
 ```
 ## Preparation
 Preprocess the raw captions and image pairs:
 ```python
-python word_encode.py
+python caption_preprocess.py
 python img_preprocess.py
 ```
 
 ## Training
- To train the proposed Diffusion-RSCC, run the following command:
+ To train the proposed UniChange, run the following command:
 ```python
 sh demo.sh
 ```
 
-## Testing
- To test, evaluate and visualize on the test dataset, run the following command
+## Inference
+ For inference and visualization on the test dataset, run the following command
 ```python
-sh testlm.sh
+python joint_sample_batch.py
 ```
 
 ## Visualization
 ```python
-cd result
+cd out_joint_step_50
 ```
 In the paper, the predicted captions are saved in folder "result". 
 ## Prediction samples
