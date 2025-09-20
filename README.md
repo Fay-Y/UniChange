@@ -1,7 +1,7 @@
 # UniChange
 
 > __Multi-modal change interpretation based on diffusion models for remote sensing__  
-> Liwen Zhang, Xiaofei Yu, Yitong Li, Jie Ma*， Chang Li*, Hanlin Wu  [[paper](https://arxiv.org/abs/2405.12875)]
+> Liwen Zhang, Xiaofei Yu*, Jie Ma, Chang Li, Xiaoyu Zhang 
 
 ##  Model Architecture
 The proposed UniChange consists of:
@@ -29,25 +29,28 @@ path to ./data:
                   ├─train
                   │  ├─A
                   │  ├─B
+                  │  ├─label
                   ├─val
                   │  ├─A
                   │  ├─B
+                  │  ├─label
                   ├─test
                   │  ├─A
                   │  ├─B
+                  │  ├─label
 ```
 
 
 ## Installation and Dependencies
 ```python
-git clone https://github.com/Fay-Y/UniChange
+git clone git@github.com:Fay-Y/UniChange.git
 cd UniChange
 conda create -n unichange python=3.8
 conda activate unichange
 pip install -r requirements.txt
 ```
 ## Preparation
-Preprocess the raw captions and image pairs:
+Preprocess the raw captions and image pairs to extract features in advance:
 ```python
 python caption_preprocess.py
 python img_preprocess.py
@@ -74,14 +77,15 @@ In the paper, the predicted captions are saved in folder "result".
 Prediction results in test set with 5 Ground Truth captions are partly shown below, proving the effectiveness of our model. 
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/eaf7ba0c-1a4d-44cd-9d11-84bfda0058ab" alt="compare2" width="500"/></td>
-    <td><img src="https://github.com/user-attachments/assets/b61bad59-afd0-4313-9b97-d7ab859222eb" alt="compare1" width="500"/></td>
+    
+    <td><img src="https://github.com/user-attachments/assets/5e49b8ef-24d2-495c-b4df-9c947a2c7d48" alt="comparison on change captioning" width="1000"/></td>
   </tr>
 </table>
 
+
 ## TODO
 - [ ] Release training logs and checkpoints
-- [ ] Support more RSICC datasets
+- [ ] Support more change interpretation datasets
 
 
 
