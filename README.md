@@ -75,13 +75,9 @@ cd out_joint_step_50
 In the paper, the predicted captions are saved in folder "result". 
 ## Prediction samples
 Prediction results in test set with 5 Ground Truth captions are partly shown below, proving the effectiveness of our model. 
-<table>
-  <tr>
-    
-    <td><img src="https://github.com/user-attachments/assets/5e49b8ef-24d2-495c-b4df-9c947a2c7d48" alt="comparison on change captioning" width="1000"/></td>
-  </tr>
-</table>
 
+![change captioning comparison](https://github.com/user-attachments/assets/afccb7ab-24f6-45fb-97a1-bda1dabf2296)
+<img width="1498" height="2421" alt="experiment_cc" src="https://github.com/user-attachments/assets/afccb7ab-24f6-45fb-97a1-bda1dabf2296" />
 
 ## TODO
 - [ ] Release training logs and checkpoints
